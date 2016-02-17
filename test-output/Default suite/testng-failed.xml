@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="tests.SellingBooks"/>
+      <class name="tests.LoginTest"/>
+      <class name="tests.SendMailTest"/>
+      <class name="tests.UsingAssertion"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="tests.SendMailTest">
+        <methods>
+          <include name="testSendingMail"/>
+        </methods>
+      </class> <!-- tests.SendMailTest -->
+      <class name="tests.SellingBooks">
+        <methods>
+          <include name="shouldWeSkip"/>
+          <include name="testSellingBooks"/>
+        </methods>
+      </class> <!-- tests.SellingBooks -->
+      <class name="tests.UsingAssertion">
+        <methods>
+          <include name="testGoogleSearch"/>
+        </methods>
+      </class> <!-- tests.UsingAssertion -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testRegister"/>
+          <include name="openConnection"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

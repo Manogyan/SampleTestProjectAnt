@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My Test Suite" >
+    
+    <test name="Learning Assertion" >
+        <classes>
+            <class name="tests.UsingAssertion" />
+        </classes>
+    </test>
+    <test name="Testing Login" >
+        <classes>
+            <class name="tests.LoginTest" />
+        </classes>
+    </test>
+    
+    <test name="Testing the Selling Books" >
+        <classes>
+            <class name="tests.SellingBooks" />
+        </classes>
+    </test>
+</suite>
